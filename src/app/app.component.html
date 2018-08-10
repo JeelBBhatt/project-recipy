@@ -1,0 +1,17 @@
+<app-header></app-header>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <router-outlet></router-outlet>
+    </div>
+    <div class="col-md-12" >
+     <button class="btn btn-primary" (click)="onAnimation()">Animation</button>
+      <button class="btn btn-primary" (click)="onShrink()" style="margin-left: 5px;">Shrink</button>
+    </div>
+    <br>
+    <div [@divState] = 'state'
+         style="width: 100px;height: 100px;border: 1px solid black; margin-top: 150px">
+    </div>
+  </div>
+</div>
+
